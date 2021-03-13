@@ -38,17 +38,26 @@ let devMountainGoal = null;
 //plus the value of the name parameter.
 
 //Code here
-function
-let greeting = 'Hello ,' myName;
+
+function greeting(name){
+  return "Hello, " + name
+};
+
+greeting("Mark");
+
+
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
-function newGreeting(){
-  let greeting = 'Hello ,' myName
+
+const newGreeting = function(name){
+  return "hello, " + name
 };
+
+newGreeting("Jenny");
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
@@ -76,7 +85,7 @@ const dog = {
 //variable called devMountainClassPet.
 
 //Code Here
-dog.name = devMountainClassPet
+devMountainClassPet = dog.name
 
 //////////////////PROBLEM 10////////////////////
 
@@ -88,19 +97,20 @@ dog.name = devMountainClassPet
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
-function nameCheck (firstName) {
+function nameCheck (name) {
 
-  if firstName = 'Steven'
-  console.log('What is up Steven?')};
+  if (name === 'Steven') {
+  return 'What is up Steven?';
 
-  else if firstName = 'Bryan' {
-  console.log ('Hey Bryan!')};
-
-  else = {
-    console.log('Cool name, ' firstName);
+  }else if (name === 'Bryan') {
+  return 'Hey Bryan!'
+  }
+  else {
+    return 'Cool name, ' + name;
   }
 
-  
+
+  nameCheck('Matt');
 
 
 //////////////////PROBLEM 11////////////////////
@@ -132,19 +142,21 @@ add(3, 4);
 
 // Code here
 function faveColorFinder (color) {
-  if color = 'red'
-  console.log('red is a great color')};
+  if (color === 'red') {
+  return 'red is a great color';
 
-  else if color = 'green' {
-  console.log('green is a solid favorite color')};
-  
-  else if color = 'black' {
-    console.log('so trendy')};
+} else if (color === 'green') {
+  return 'green is a solid favorite color';
 
-  else = {
-    console.log('you need to evaluate your favorite color choice')
+} else if (color = 'black') {
+    return 'so trendy';
+
+} else {
+    return 'you need to evaluate your favorite color choice';
   }
+};
 
+faveColorFinder('Blue');
 //////////////////PROBLEM 13////////////////////
 
 let duck = "cute";
